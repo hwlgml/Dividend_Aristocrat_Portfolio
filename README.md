@@ -1,18 +1,18 @@
 # Optimization of Dividend Aristocrat Portfolio Utilizing Fundamental Data and Backtesting
 
-## Overview
+## 0. Overview
 This project was conducted as part of the Y-FoRM 24-1 long-term project initiative. Please refer to the full report for a comprehensive analysis and detailed results.
 
 This project is dedicated to the optimization of a Dividend Aristocrat portfolio by leveraging fundamental financial data. The portfolio optimization primarily focuses on maximizing the Sharpe Ratio while ensuring stable and consistent dividend income, even during periods of market volatility. The study involves the use of key financial metrics, such as the Price-to-Earnings Ratio (PER) and Price-to-Free Cash Flow (P/FCF), to enhance the predictive capability of dividend payments and portfolio stability.
 
-## Background
+## 1. Background
 ### Motivation
 The increasing pace of population aging and the relatively low levels of pension income have heightened the need for investment portfolios that can generate stable income, particularly in uncertain economic environments. Dividend Aristocrats, which are companies that have increased their dividends for at least 25 consecutive years, offer a potential solution due to their consistent and reliable dividend payouts.
 
 ### Project Objective
 The goal of this project is to create a mathematically optimized portfolio that focuses on Dividend Aristocrats, integrating constraints derived from fundamental data to better predict future dividends and optimize asset positioning. The project uses the Sharpe Ratio as the primary measure of portfolio performance, reflecting the trade-off between risk and return.
 
-## Methodology
+## 2. Methodology
 ### Data Preprocessing
 
 - **Dividend Data Adjustment**: The dataset was adjusted for special dividends, outliers in dividend payouts, and ensured consistent dividend distributions across selected stocks.
@@ -64,20 +64,20 @@ subject to:
 ### Rebalancing Strategy
 - **Annual Rebalancing**: The portfolio was rebalanced annually, using a sliding window approach. Data from the previous 3 years was used to set the weights for the next year’s portfolio, adjusting for changes in stock prices and dividends.
 
-## Results and Analysis
+## 3. Results and Analysis
 - **Sharpe Ratio**: The optimized portfolio demonstrated a superior Sharpe Ratio compared to a simple equally-weighted portfolio of Dividend Aristocrats, indicating better risk-adjusted returns.
 - **Dividend Stability**: The portfolio provided stable monthly dividends, with an emphasis on maintaining a minimum of $100 in monthly dividend income, even during the market downturns in 2020 and 2021.
 - **Gordon Growth Model Validation**: The assumptions of the Gordon Growth Model were largely validated, although some deviations were observed, particularly in periods of extreme market volatility.
 
-### Limitations
+## 4. Limitations
 - **Assumptions**: The model assumes that stocks can be purchased at their closing prices, which may not always be feasible in real-world trading scenarios.
 - **Fixed Rebalancing Date**: Rebalancing was fixed at the start of each year (January 1st), which may not capture optimal rebalancing opportunities throughout the year.
 
-## Future Work
+## 5. Future Work
 - **Dynamic Rebalancing**: Implement real-time data integration to enable dynamic rebalancing based on market conditions and updated financial metrics.
 - **Exploration of Alternative Models**: Investigate alternative models for predicting dividend growth and stock price appreciation to further refine the portfolio optimization process.
 
-## Conclusion
+## 6. Conclusion
 This project successfully developed an optimized Dividend Aristocrat portfolio that leverages fundamental financial data to maximize risk-adjusted returns while maintaining stable dividend income. The findings demonstrate the potential for fundamental data-driven portfolio optimization in enhancing investment outcomes, particularly for income-focused investors.
 
 ## Appendix
